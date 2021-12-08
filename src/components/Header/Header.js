@@ -42,11 +42,11 @@ function Header(){
                    <a href="#">SHOP</a>
                    <a href="#">ABOUT</a> 
                    </NavFirst>
-                   <Logo style={{margin:"0 auto"}}>Neuro<sup><i class="far fa-copyright" style={{fontSize:"10px"}}></i></sup></Logo>
+                   <Logo style={{margin:"0 auto"}}>Neuro<sup><i className="far fa-copyright" style={{fontSize:"10px"}}></i></sup></Logo>
                    <NavSecond>
                    <a href="#">SUBSCRIPTION</a>
                    <a href="#">SIGN IN</a>
-                   <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                   <a href="#"><i className="fas fa-shopping-bag"></i></a>
                    </NavSecond>
                 </NavMenu>
         </HeaderBlock>
