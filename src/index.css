@@ -25,3 +25,20 @@ a{
   text-decoration: none;
   color:#000;
 }
+
+.btnSmall{
+  width:100%;
+  max-width:182px;
+  height:42px;
+  display:block;
+  border:2px solid #000000;
+  background:#fff;
+  cursor:pointer;
+  margin:42px auto;
+  word-spacing:10px;
+}
+
+.btnSmall:hover{
+  background:black;
+  color:#fff;
+}

@@ -1,65 +1,44 @@
-import styled from 'styled-components'
-import ImgSrc from '../../assets/images/backgroundMain.png'
+
+import Rectangle from '../../assets/images/Rectangle.png'
 
 
-const HeaderInner=styled.section`
-    height:100vh;
-    background-image: url(${ImgSrc});
-    background-size:cover;
-
-`;
-
-const HeaderInnerText=styled.div`
-    width:319px;
-    position:relative;
-    top:15%;
-    left:5%;
-    font-size:55px;
-    font-weight:bold;
-    color:#fff;
-`;
-
-const Btn=styled.button`
-    width:100%;
-    max-width:260px;
-    height:52px;
-    background:#000;
-    border:none;
-    border-radius:2px;
-    cursor:pointer;
-`;
-
-const Cookies=styled.div`
-    position:relative;
-    top:55%;
-    height:72px;
-    background:#000;
-    color:#fff;
-    font-size:16px;
-    display:flex;
-    align-items:center;
-    
-`;
 
 function Main(){
     return(
-        <HeaderInner>
-           <HeaderInnerText>
-               <div>
-                   Health in
-                   your pocket.
-                <p style={{fontSize:"20px", fontWeight:"normal", lineHeight:"30px"}}>
-                Functional gum and mints to energize, calm and focus you in the moment.
-                </p>
-                <Btn type="button"><a href="#" style={{color:"#fff", fontFamily:"Roboto", fontSize:"14px", fontWeight:"bold"}}>SHOP</a></Btn>
-               </div>
-           </HeaderInnerText>
-           <Cookies className="Cookies">
-                <span style={{paddingLeft:"29px", paddingRight:"20px"}}>We use cookies to enhance your experience on our website. By using our website, you agree to our privacy policy.</span>
-                <span><a href="#" style={{color:"#fff"}}>Learn more</a></span>
-                <Btn type="button"><a href="#" style={{background:"#fff", width:"167px", height:"40px", color:"#000", fontFamily:"Roboto", fontSize:"14px", fontWeight:"bold"}}>Got it</a></Btn>
-            </Cookies>
-        </HeaderInner>
+        <>
+        <section style={{height:"238px", background:"#F0FAF7"}}></section>
+        <section>
+            <div style={{height:"607px", display:"flex", alignItems:"center"}}>
+            <div style={{width:"100%", maxWidth:"633px", margin:"0 auto"}}>
+            <div style={{textAlign:"center", fontSize:"40px", fontWeight:"bold"}}>We get the mental game</div>
+            <p style={{fontSize:"20px", lineHeight:"31px", textAlign:"center"}}>That’s why we create products to help shift your mindset with ease and flow. Our functional gum and mints are shortcuts to the ideal state of mind, delivering just the right amount of what you need to energize, calm and focus your mind in the moment.</p>
+            <img src={Rectangle} style={{width:"100%"}}></img>
+            <div style={{fontSize:"40px", fontWeight:"bold", textAlign:"center"}}>Shop by function</div>
+            <p style={{textAlign:"center", fontSize:"16px"}}>Find the right products for any situation.</p>
+            </div>
+            </div>
+            <div style={{width:"100%", maxWidth:"918px", display:"flex", justifyContent:"space-between", margin:"0 auto"}}>
+                <div style={{width:"100%", maxWidth:"290px", height:"250px", background:"#005466"}}>
+                <i className="fas fa-spinner" style={{display:"block", color:"#fff", marginTop:"40px", marginLeft:"auto", textAlign:"center", fontSize:"30px"}}></i>
+                <div style={{marginTop:"37px", color:"#fff", textAlign:"center"}}>ENERGY & FOCUS</div>
+                <button className="btnSmall" type="button">SHOP NOW</button>
+                </div>
+            <div style={{width:"100%", maxWidth:"290px", height:"250px", background:"#F7D8BF"}}>
+                <i className="fas fa-rainbow" style={{display:"block", color:"#C47B59", marginTop:"40px", marginLeft:"auto", textAlign:"center", fontSize:"30px"}}></i>
+                <div style={{marginTop:"37px", color:"#C47B59", textAlign:"center"}}>CALM & CLARITY</div>
+                <button className="btnSmall" type="button">SHOP NOW</button>
+            </div>
+                <div style={{width:"100%", maxWidth:"290px", height:"250px", background:"#F1FAF6"}}>
+                    <div style={{textAlign:"center"}}>
+                    <i className="fas fa-spinner" style={{display:"inline-block", color:"#64BAA1", marginTop:"40px", marginRight:"10px", textAlign:"center", fontSize:"30px", }}></i>
+                    <i className="fas fa-rainbow" style={{display:"inline-block", color:"#64BAA1", marginTop:"40px", marginLeft:"auto", textAlign:"center", fontSize:"30px"}}></i>
+                    </div>
+                <div style={{marginTop:"37px", color:"#64BAA1", textAlign:"center"}}>CALM & CLARITY</div>
+                <button className="btnSmall" type="button">SHOP NOW</button>
+            </div>
+            </div>
+        </section>
+        </>
     )
 }
 

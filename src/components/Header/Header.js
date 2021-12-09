@@ -37,7 +37,7 @@ const NavSecond=styled.div`
 function Header(){
     return(
         <HeaderBlock className="Header">
-                <NavMenu className="Header-inner-menu" style={{display:"flex", alignItems:"center"}}>
+                <NavMenu className="Header-inner-menu" style={{display:"flex", alignItems:"center", paddingLeft:"10px", paddingRight:"10px"}}>
                     <NavFirst className="NavMenu-first">
                    <a href="#">SHOP</a>
                    <a href="#">ABOUT</a> 
