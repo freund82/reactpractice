@@ -17,7 +17,7 @@ function Main(){
             <p style={{textAlign:"center", fontSize:"16px"}}>Find the right products for any situation.</p>
             </div>
             </div>
-            <div style={{width:"100%", maxWidth:"918px", display:"flex", justifyContent:"space-between", margin:"0 auto"}}>
+            <div style={{width:"100%", maxWidth:"918px", display:"flex", flexWrap:"wrap", justifyContent:"space-between", margin:"0 auto"}}>
                 <div style={{width:"100%", maxWidth:"290px", height:"250px", background:"#005466"}}>
                 <i className="fas fa-spinner" style={{display:"block", color:"#fff", marginTop:"40px", marginLeft:"auto", textAlign:"center", fontSize:"30px"}}></i>
                 <div style={{marginTop:"37px", color:"#fff", textAlign:"center"}}>ENERGY & FOCUS</div>
