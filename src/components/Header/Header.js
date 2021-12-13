@@ -5,7 +5,6 @@ import styled from 'styled-components'
 const HeaderBlock=styled.div`
 position:absolute;
 width:100%;
-max-width:1440px;
 height:84px;
 color:#000;
 background: #87ADB6;
